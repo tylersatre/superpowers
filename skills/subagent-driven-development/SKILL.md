@@ -48,8 +48,7 @@ Task tool (general-purpose):
     1. Implement exactly what the task specifies
     2. Write tests (following TDD if task says to)
     3. Verify implementation works
-    4. Commit your work
-    5. Report back
+    4. Report back
 
     Work from: [directory]
 
@@ -128,8 +127,8 @@ Task 2: Recovery modes
 [Dispatch implementation subagent]
 Subagent: Added verify/repair, 8/8 tests passing
 
-[Dispatch code-reviewer]
-Reviewer: Strengths: Solid. Issues (Important): Missing progress reporting
+[Dispatch code-reviewer subagent]
+Reviewer Subagent: Strengths: Solid. Issues (Important): Missing progress reporting
 
 [Dispatch fix subagent]
 Fix subagent: Added progress every 100 conversations

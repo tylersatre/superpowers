@@ -2,6 +2,10 @@
 
 A comprehensive skills library of proven techniques, patterns, and workflows for AI coding assistants.
 
+## Fork Information
+
+THis is a fork of https://github.com/obra/superpowers that removes the git worktrees skill and any references to it.
+
 ## What You Get
 
 - **Testing Skills** - TDD, async testing, anti-patterns
@@ -95,7 +99,6 @@ Skills activate automatically when relevant. For example:
 - **dispatching-parallel-agents** - Concurrent subagent workflows
 - **requesting-code-review** - Pre-review checklist
 - **receiving-code-review** - Responding to feedback
-- **using-git-worktrees** - Parallel development branches
 - **finishing-a-development-branch** - Merge/PR decision workflow
 - **subagent-driven-development** - Fast iteration with quality gates
 

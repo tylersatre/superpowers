@@ -133,20 +133,6 @@ git branch -D <feature-branch>
 
 Then: Cleanup worktree (Step 5)
 
-### Step 5: Cleanup Worktree
-
-**For Options 1, 2, 4:**
-
-Check if in worktree:
-```bash
-git worktree list | grep $(git branch --show-current)
-```
-
-If yes:
-```bash
-git worktree remove <worktree-path>
-```
-
 **For Option 3:** Keep worktree.
 
 ## Quick Reference
@@ -195,6 +181,3 @@ git worktree remove <worktree-path>
 **Called by:**
 - **subagent-driven-development** (Step 7) - After all tasks complete
 - **executing-plans** (Step 5) - After all batches complete
-
-**Pairs with:**
-- **using-git-worktrees** - Cleans up worktree created by that skill
