@@ -108,17 +108,16 @@ Bug: Empty `projectDir` caused `git init` in source code
 3. `WorkspaceManager.createWorkspace('')`
 4. `git init` runs in `process.cwd()`
 
-**Four layers added:**
+**Three layers added:**
 - Layer 1: `Project.create()` validates not empty/exists/writable
 - Layer 2: `WorkspaceManager` validates projectDir not empty
-- Layer 3: `WorktreeManager` refuses git init outside tmpdir in tests
-- Layer 4: Stack trace logging before git init
+- Layer 3: Stack trace logging before git init
 
 **Result:** All 1847 tests passed, bug impossible to reproduce
 
 ## Key Insight
 
-All four layers were necessary. During testing, each layer caught bugs the others missed:
+All three layers were necessary. During testing, each layer caught bugs the others missed:
 - Different code paths bypassed entry validation
 - Mocks bypassed business logic checks
 - Edge cases on different platforms needed environment guards
